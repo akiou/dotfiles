@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/oka/.oh-my-zsh
+export ZSH=/Users/oka/.oh-my-zsh # use your user name
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
