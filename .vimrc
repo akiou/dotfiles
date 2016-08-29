@@ -3,6 +3,7 @@ filetype off
 
 if has('vim_starting')
     set runtimepath+=~/.vim/bundle/neobundle.vim
+    set runtimepath+=~/.vim/plugin
     call neobundle#begin(expand('~/.vim/bundle/'))
 endif
 
@@ -20,6 +21,8 @@ inoremap ( ()<Left>
 inoremap " ""<Left>
 inoremap ' ''<Left>
 inoremap < <><Left>
+
+let mapleader = "\<Space>"
 
 filetype plugin indent on
 
