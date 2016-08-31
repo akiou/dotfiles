@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/oka/.oh-my-zsh # use your user name
+export ZSH=/Users/oka/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -58,6 +58,7 @@ export PATH="/usr/bin:/bin"
 export PATH="/usr/local/bin:$PATH:/usr/local/sbin"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 alias mvim="/Applications/MacVim.app/Contents/MacOS/Vim -g"
+alias todo="mvim ~/Dropbox/todo.md"
 
 source $ZSH/oh-my-zsh.sh
 
