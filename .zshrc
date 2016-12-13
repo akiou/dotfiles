@@ -57,6 +57,8 @@ export PATH="/usr/bin:/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="/usr/local/bin:$PATH:/usr/local/sbin"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH="/Applications/TeXLive/Library/mactexaddons/bin:$PATH"
+export PATH="/Applications/TeXLive/Library/texlive/2013/bin/x86_64-darwin:$PATH"
 alias mvim="/Applications/MacVim.app/Contents/MacOS/Vim -g"
 alias todo="mvim ~/Dropbox/todo.md"
 

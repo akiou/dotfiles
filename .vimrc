@@ -9,6 +9,7 @@ endif
 
 "insert here your Neobundle plugins"
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'vim-latex/vim-latex'
 call neobundle#end()
 
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
@@ -57,3 +58,24 @@ set tabstop=4
 set smarttab
 
 set clipboard=unnamed,unnamedplus
+
+""
+"" Vim-LaTeX
+""
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor='latex'
+let g:Imap_UsePlaceHolders = 1
+let g:Imap_DeleteEmptyPlaceHolders = 1
+let g:Imap_StickyPlaceHolders = 0
+let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_FormatDependency_pdf = 'dvi,pdf'
+let g:Tex_FormatDependency_ps = 'dvi,ps'
+let g:Tex_CompileRule_pdf = 'ptex2pdf -l -ot "-synctex=1 -interaction=nonstopmode -file-line-error-style" $*'
+let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi'
+let g:Tex_CompileRule_dvi = 'platex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
+let g:Tex_BibtexFlavor = 'pbibtex'
+let g:Tex_MakeIndexFlavor = 'mendex $*.idx'
+let g:Tex_UseEditorSettingInDVIViewer = 1
+let g:Tex_ViewRule_pdf = 'open -a Preview.app'
+let g:Tex_ViewRule_ps = 'open'
+let g:Tex_ViewRule_dvi = 'open'
