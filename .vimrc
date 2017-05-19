@@ -21,7 +21,6 @@ inoremap [ []<Left>
 inoremap ( ()<Left>
 inoremap " ""<Left>
 inoremap ' ''<Left>
-inoremap < <><Left>
 
 let mapleader = "\<Space>"
 

@@ -1,5 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/oka/.oh-my-zsh
+export JUNIT_HOME=/usr/local/java
+export CLASSPATH=.:/usr/local/java/junit-4.12.jar:$CLASSPATH
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -55,12 +57,14 @@ plugins=(git)
 
 export PATH="/usr/bin:/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH="/usr/local/bin:$PATH:/usr/local/sbin"
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH="/bin/bash:/usr/local/bin:$PATH:/usr/local/sbin"
+export PATH="$HOME/.nodebrew/current/bin:$PATH"
 export PATH="/Applications/TeXLive/Library/mactexaddons/bin:$PATH"
 export PATH="/Applications/TeXLive/Library/texlive/2013/bin/x86_64-darwin:$PATH"
 alias mvim="/Applications/MacVim.app/Contents/MacOS/Vim -g"
+alias mdown="open -a MacDown "
 alias todo="mvim ~/Dropbox/todo.md"
+# alias check="stack exec checkouter-exe ./p2-students\ -\ forms.csv"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,3 +92,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# OPAM configuration
+. /Users/oka/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
